@@ -1,0 +1,127 @@
+
+CREATE TABLE training (
+    id INT PRIMARY KEY,
+    employee_id VARCHAR(10),
+    course_name VARCHAR(50),
+    start_date DATE,
+    status VARCHAR(20)
+);
+
+
+INSERT INTO training (id, employee_id, course_name, start_date, status) VALUES
+(1, 'E003', 'Machine Learning', '2023-12-15', 'Not Started'),
+(2, 'E007', 'Data Science Basics', '2024-01-10', 'Completed'),
+(3, 'E001', 'Python for Data Analysis', '2024-02-05', 'In Progress'),
+(4, 'E004', 'Project Management', '2023-11-20', 'Cancelled'),
+(5, 'E002', 'Cloud Computing', '2024-01-30', 'In Progress'),
+(6, 'E005', 'Cybersecurity', '2024-02-14', 'Not Started'),
+(7, 'E006', 'Agile Development', '2024-03-01', 'Completed'),
+(8, 'E008', 'SQL Fundamentals', '2023-12-05', 'Not Started'),
+(9, 'E009', 'Big Data Processing', '2024-01-25', 'Completed'),
+(10, 'E010', 'Software Testing', '2023-11-18', 'Cancelled'),
+(11, 'E011', 'DevOps', '2024-02-07', 'In Progress'),
+(12, 'E012', 'Artificial Intelligence', '2023-12-10', 'Not Started'),
+(13, 'E001', 'Cloud Computing', '2024-02-28', 'Completed'),
+(14, 'E002', 'Machine Learning', '2023-12-22', 'Not Started'),
+(15, 'E003', 'Agile Development', '2024-01-15', 'In Progress'),
+(16, 'E004', 'SQL Fundamentals', '2024-03-05', 'Completed'),
+(17, 'E005', 'Big Data Processing', '2023-12-29', 'Cancelled'),
+(18, 'E006', 'Python for Data Analysis', '2024-02-10', 'In Progress'),
+(19, 'E007', 'DevOps', '2024-01-12', 'Not Started'),
+(20, 'E008', 'Artificial Intelligence', '2023-11-30', 'Completed'),
+(21, 'E009', 'Cybersecurity', '2024-02-20', 'In Progress'),
+(22, 'E010', 'Data Science Basics', '2023-12-17', 'Cancelled'),
+(23, 'E011', 'Project Management', '2024-01-28', 'Completed'),
+(24, 'E012', 'Software Testing', '2024-03-02', 'Not Started'),
+(25, 'E001', 'Big Data Processing', '2023-12-08', 'Completed'),
+(26, 'E002', 'Agile Development', '2024-01-05', 'In Progress'),
+(27, 'E003', 'DevOps', '2024-02-15', 'Cancelled'),
+(28, 'E004', 'Artificial Intelligence', '2024-01-23', 'Not Started'),
+(29, 'E005', 'SQL Fundamentals', '2023-12-13', 'Completed'),
+(30, 'E006', 'Machine Learning', '2024-02-25', 'In Progress'),
+(31, 'E007', 'Python for Data Analysis', '2024-01-08', 'Not Started'),
+(32, 'E008', 'Cloud Computing', '2023-11-28', 'Cancelled'),
+(33, 'E009', 'Project Management', '2024-02-18', 'Completed'),
+(34, 'E010', 'Cybersecurity', '2024-01-02', 'Not Started'),
+(35, 'E011', 'Software Testing', '2023-12-25', 'In Progress'),
+(36, 'E012', 'Data Science Basics', '2024-01-20', 'Completed'),
+(37, 'E001', 'SQL Fundamentals', '2024-02-12', 'Cancelled'),
+(38, 'E002', 'Artificial Intelligence', '2023-12-02', 'Not Started'),
+(39, 'E003', 'DevOps', '2024-01-17', 'In Progress'),
+(40, 'E004', 'Big Data Processing', '2024-02-22', 'Completed'),
+(41, 'E005', 'Cloud Computing', '2023-11-27', 'Cancelled'),
+(42, 'E006', 'Python for Data Analysis', '2024-03-07', 'Not Started'),
+(43, 'E007', 'Machine Learning', '2024-01-30', 'Completed'),
+(44, 'E008', 'Agile Development', '2023-12-09', 'In Progress'),
+(45, 'E009', 'Software Testing', '2024-02-14', 'Not Started'),
+(46, 'E010', 'Cybersecurity', '2024-01-26', 'Completed'),
+(47, 'E011', 'Project Management', '2023-12-05', 'Cancelled'),
+(48, 'E012', 'SQL Fundamentals', '2024-02-09', 'Not Started'),
+(49, 'E001', 'Artificial Intelligence', '2023-11-21', 'In Progress'),
+(50, 'E002', 'Big Data Processing', '2024-01-29', 'Completed');
+
+
+
+
+
+
+CREATE TABLE course_score (
+    id SERIAL PRIMARY KEY,
+    employee_course_id INT NOT NULL,
+    score INT 
+);
+
+
+INSERT INTO course_score (employee_course_id, score) VALUES
+(2, 85),
+(3, 90),
+(5, 78),
+(7, 88),
+(9, 92),
+(11, 76),
+(13, 80),
+(15, 83),
+(16, 95),
+(18, 70),
+(20, 89),
+(21, 77),
+(23, 91),
+(25, 65),
+(26, 74),
+(28, 86),
+(30, 93),
+(33, 72),
+(35, 84),
+(36, 79),
+(39, 88),
+(40, 90),
+(43, 81),
+(44, 87),
+(46, 94),
+(49, 73),
+(50, 85);
+
+
+
+CREATE TABLE training_completed (
+    id INT PRIMARY KEY,
+    employee_id VARCHAR(10),
+    course_name VARCHAR(50),
+    start_date DATE,
+    status VARCHAR(20)
+);
+
+CREATE TABLE 4_task (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    course_name  VARCHAR(50,
+    status  VARCHAR(50),
+    count_student int
+)
+
+CREATE TABLE 5_task (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    employee_id  VARCHAR(50,
+    course_name  VARCHAR(50),
+    score int
+)
+
